@@ -29,7 +29,9 @@ if (score>1){
 
 }
 
-}else if ( guess> secretnumber){
+
+/*
+else if ( guess> secretnumber){
     document.querySelector('.message').textContent='too high 😫'
     score--;
     document.querySelector('.score').textContent=score;
@@ -40,10 +42,12 @@ if (score>1){
     score--;
     document.querySelector('.score').textContent=score;
 }
-// when u loose the game 
-    } else {
+// when u loose the game */
+     else {
         document.querySelector('.message').textContent='You lost the game !';
         document.querySelector('.score').textContent=0
+    }
+}
     }
 })
 document.querySelector('.again').addEventListener('click',function(){
